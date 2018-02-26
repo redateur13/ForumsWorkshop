@@ -1,4 +1,7 @@
 from models import *
+from store import *
+#import models 
+#import Store 
 
 member1 = Member("reda" , 27)
 member2 = Member("amine" , 18)
@@ -16,3 +19,9 @@ print(post1.topic)
 print(member2.age)
 print(post2.title)
 print(post3.topic)
+
+member_stored = MemberStore()
+member_stored.add(member1)
+member_stored.add(member2)
+
+print(member_stored.get_all)
