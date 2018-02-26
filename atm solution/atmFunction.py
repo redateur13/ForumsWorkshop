@@ -1,10 +1,11 @@
 def withdraw(request, balance):
-	# atm solution with function 
-	# allowed papers: 100, 50, 10, 5.
-	back = balance - request 
+	''' atm solution with function 
+	    allowed papers: 100, 50, 10, 5.'''
+	result = balance
 	if request > balance:
 			print("Can't give you all this money !")
 	else :
+		result -= request
 		while request > 0 :
 			if request >= 100 :
 				print ("give 100")
@@ -21,10 +22,10 @@ def withdraw(request, balance):
 			elif request <= 4 :
 				print ("give " , request)
 				request = 0
-		return back
-                               	    			
+		return result  
+				                               	    			
 balance = 500	
-balance = (withdraw(237, balance))	
+balance = (withdraw(377, balance))	
 print (balance)
 	
 		
