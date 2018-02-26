@@ -20,20 +20,12 @@ def withdraw(request, balance):
 				print ("give 5")
 				request -= 5
 			elif request <= 4 :
-				print ("give " , request)
+				print ("give " + str(request))
 				request = 0
-		return result  
+	return result  
 				                               	    			
 balance = 500	
-balance = (withdraw(377, balance))	
+balance = (withdraw(357, balance))	
+	
 print (balance)
-	
-		
 
-
-
-	
-		
-		
-		
-	
