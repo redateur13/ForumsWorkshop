@@ -4,6 +4,8 @@ def withdraw(request, balance):
 	result = balance
 	if request > balance:
 			print("Can't give you all this money !")
+	elif request <= 0:	
+		print("The request is invalid amount !")	
 	else :
 		result -= request
 		while request > 0 :
@@ -25,7 +27,6 @@ def withdraw(request, balance):
 	return result  
 				                               	    			
 balance = 500	
-balance = (withdraw(357, balance))	
+balance = (withdraw(-357, balance))	
 	
 print (balance)
-
