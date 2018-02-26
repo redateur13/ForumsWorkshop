@@ -27,6 +27,6 @@ def withdraw(request, balance):
 	return result  
 				                               	    			
 balance = 500	
-balance = (withdraw(-357, balance))	
+balance = (withdraw(0, balance))	
 	
 print (balance)
