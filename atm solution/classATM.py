@@ -8,6 +8,8 @@ class ATM:
 		''' atm solution with function 
 		allowed papers: 100, 50, 10, 5.'''
 		print("Welcome to " + self.bank_name)
+		print("Current balance = " + str(self.balance))
+		print("==================================")
 		result = self.balance
 		if request > self.balance:
 			print("Can't give you all this money !")
@@ -32,6 +34,7 @@ class ATM:
 					print ("give " , request)
 					request = 0
 		return result  
+		
 						
 
 balance1 = 500
