@@ -1,15 +1,14 @@
-from models import *
-from store import *
-#import models 
-#import Store 
 
-member1 = Member("reda" , 27)
-member2 = Member("amine" , 18)
+import models 
+import store 
+
+member1 = models.Member("reda" , 27)
+member2 = models.Member("amine" , 18)
 
 
-post1 = Post("function Print in Python " , "The print statement has ...")
-post2 = Post("python input " , "Input can come in various ..." )
-post3 = Post("exercise " , "Create a program that asks the user ...")
+post1 = models.Post("function Print in Python " , "The print statement has ...")
+post2 = models.Post("python input " , "Input can come in various ..." )
+post3 = models.Post("exercise " , "Create a program that asks the user ...")
 
 
 print(member1.name)
@@ -20,7 +19,7 @@ print(member2.age)
 print(post2.title)
 print(post3.topic)
 
-member_stored = MemberStore()
+member_stored = store.MemberStore()
 member_stored.add(member1)
 member_stored.add(member2)
 

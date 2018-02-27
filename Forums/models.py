@@ -1,6 +1,7 @@
 class Member:
 	'''define a member name and age '''
 	def __init__(self, name , age):
+		self.member_id = id
 		self.name = name
 		self.age = age
 
@@ -10,5 +11,3 @@ class Post:
 		self.title = title
 		self.topic = topic 
 	
-		
-		
