@@ -55,6 +55,6 @@ print_all_members(member_store)
 
 update_object(member_store, member2)
 
-print_all_members(member_store)		
+	
 
 	
