@@ -18,6 +18,7 @@ class MemberStore:
 		 for member in member_list:
 			 if member.id == id:
 				 result = member
+				 break
 		 return result	
 		 	 
 	   

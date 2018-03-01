@@ -4,6 +4,10 @@ class Member:
 		self.member_id = id
 		self.name = name
 		self.age = age
+		
+	def __str__(self):
+		return 'Name: {}\t\tAge: {}'.format(self.name, self.age)
+        	
 
 class Post:
 	'''define a title and topic of post '''

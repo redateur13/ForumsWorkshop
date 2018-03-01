@@ -4,10 +4,7 @@ import store
 def create_members():
 	member1 = models.Member("reda" , 27)
 	member2 = models.Member("amine" , 18)
-	print(member1)
-	print(member2)
-	print(member2.age)
-	print("=" * 20)
+
 	
 	return member1, member2
 	
@@ -39,15 +36,13 @@ def update_object(member_store, member2):
 
 	if member2_copy is not member2:
 		print("member2 and member2_copy are not the same !")	
-		print(member2_copy)
 		member2_copy.name = "john"
 		member_store.update(member2_copy)
-		print(member_store.get_by_id(member2.id))
 		
 members_instances = create_members()
-member1, member2, member3 = members_instances
+member1, member2 = members_instances
 
-member_store = stores.MemberStore()
+member_store = store.MemberStore()
 
 add_members_to_store(members_instances, member_store)
 
