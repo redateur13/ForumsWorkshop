@@ -11,7 +11,7 @@ class Member:
 
 class Post:
 	'''define a title and topic of post '''
-	def __init__(self, title , topic):
+	def __init__(self, title , topic, member_id):
 		self.id = 0
 		self.title = title
 		self.topic = topic
